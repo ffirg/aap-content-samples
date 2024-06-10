@@ -29,7 +29,7 @@
         organization: Default
         scm_type: git
         scm_url: "{{ product_demos_url | default('https://github.com/ansible/product-demos') }}"
-        scm_branch: creds-exist #"{{ product_demos_branch | default('main') }}"
+        scm_branch: "{{ product_demos_branch | default('main') }}"
         wait: true
     controller_templates:
       - name: "SETUP"
