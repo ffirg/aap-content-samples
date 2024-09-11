@@ -1,6 +1,4 @@
 ---
 collections:
-  - name: infra.controller_configuration
-    version: 2.9.0
   - name: ansible.controller
     version: 4.5.10
