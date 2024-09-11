@@ -3,4 +3,4 @@ collections:
   - name: ansible.controller
     version: 4.5.10
   - name: infra.controller_configuration
-    source: http://nightlies.testing.ansible.com/ansible-tower_nightlies_m8u16fz56qr6q7/ansible_release_4.6_ansible_devel_ansible_devel_ansible_devel_ansible_devel_ansible_main/collection/ansible-controller-latest.tar.gz
+    version: 2.9.0
