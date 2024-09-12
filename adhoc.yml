@@ -1,20 +1,12 @@
 ---
-- name: Launch adhoc command test
+- name: ansible.controller collection tests
   hosts: localhost
-  vars:
+  
+  tasks:
+  - name: Setup Components
     ad_hoc_command:
       inventory: Demo Inventory
       credential: Demo Credential
       module_name: command
       module_args: echo I <3 Ansible
       wait: true
-
-  tasks:
-  - name: Setup Components
-    include_role:
-      name: infra.controller_configuration.dispatch
-
-  - name: Print Message
-    debug:
-      msg: "{{ user_message }}"
-    when: user_message is defined
