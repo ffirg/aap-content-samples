@@ -1,6 +1,6 @@
 ---
 - name: ansible.controller collection tests
-  hosts: all
+  hosts: localhost
   
   tasks:
     - name: Run adhoc command
