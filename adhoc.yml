@@ -1,12 +1,12 @@
 ---
 - name: ansible.controller collection tests
-  hosts: localhost
+  hosts: all
   
   tasks:
-  - name: Setup Components
-    ansible.controller.ad_hoc_command:
-      inventory: Demo Inventory
-      credential: Demo Credential
-      module_name: command
-      module_args: echo I <3 Ansible
-      wait: true
+    - name: Run adhoc command
+      ansible.controller.ad_hoc_command:
+        inventory: Demo Inventory
+        credential: Demo Credential
+        module_name: command
+        module_args: echo I <3 Ansible
+        wait: true
