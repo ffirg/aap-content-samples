@@ -1,4 +1,5 @@
 - name: Launch an Ad Hoc Command waiting for it to finish
+  hosts: all
   ad_hoc_command:
     inventory: Demo Inventory
     credential: Demo Credential
