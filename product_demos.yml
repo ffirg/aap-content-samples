@@ -7,8 +7,8 @@
       - name: AWX_COLLECTIONS_ENABLED
         value: "false"
     controller_credentials:
-      - name: Automation Hub
-        organization: Default
+      - name: Not Reqd Loaded as Test
+        organization: PhilsFooFoo
         credential_type: Ansible Galaxy/Automation Hub API Token
         update_secrets: false
         inputs:
@@ -18,15 +18,15 @@
       - name: product-demos
         image: quay.io/acme_corp/product-demos-ee:latest
     controller_organizations:
-      - name: Default
+      - name: PhilsFooFoo
         default_environment:
-          name: 'product-demos'
+          name: 'Test for CaC Loading'
         galaxy_credentials:
-          - Ansible Galaxy
-          - Automation Hub
+          - Console.dot AH Certified Content
+          - Console.dot AH Validated Content
     controller_projects:
       - name: Ansible official demo project
-        organization: Default
+        organization: PhilsFooFoo
         scm_type: git
         scm_url: "{{ product_demos_url | default('https://github.com/ansible/product-demos') }}"
         scm_branch: "{{ product_demos_branch | default('main') }}"
