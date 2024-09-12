@@ -4,7 +4,7 @@
   
   tasks:
   - name: Setup Components
-    ad_hoc_command:
+    ansible.controller.ad_hoc_command:
       inventory: Demo Inventory
       credential: Demo Credential
       module_name: command
