@@ -1,6 +1,6 @@
 ---
 collections:
-  - name: ansible.controller
-    type: 4.6.0
+  - name: ./collections/ansible-controller-4.6.0.tar.gz
+    type: file
   - name: infra.controller_configuration
     version: 2.9.0
