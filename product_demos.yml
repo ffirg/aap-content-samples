@@ -6,6 +6,10 @@
     controller_execution_environments:
       - name: product-demos
         image: quay.io/acme_corp/product-demos-ee:latest
+    controller_organizations:
+      - name: PhilsFooFoo
+        description: Phils CaC testing
+        max_hosts: 1
     user_message: "Configuration Complete"
 
   tasks:
