@@ -6,10 +6,6 @@
     controller_execution_environments:
       - name: product-demos
         image: quay.io/acme_corp/product-demos-ee:latest
-    controller_organizations:
-      - name: PhilsFooFoo
-        default_environment:
-          name: 'Test for CaC Loading'
     user_message: "Configuration Complete"
 
   tasks:
