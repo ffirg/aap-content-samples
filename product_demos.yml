@@ -3,7 +3,6 @@
   hosts: localhost
   vars:
     controller_validate_certs: false
-    product_demos_url: https://github.com/ffirg/ansible-tower-samples
     controller_execution_environments:
       - name: product-demos
         image: quay.io/acme_corp/product-demos-ee:latest
