@@ -8,7 +8,7 @@
         image: quay.io/acme_corp/product-demos-ee:latest
     controller_projects:
       - name: Ansible official demo project
-        organization: Default
+        organization: FooBar Industries
         scm_type: git
         scm_url: "{{ product_demos_url | default('https://github.com/ansible/product-demos') }}"
         scm_branch: "{{ product_demos_branch | default('main') }}"
