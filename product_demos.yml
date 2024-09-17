@@ -60,7 +60,41 @@
             exists:
               verb: "Already Exists"
               action: "exists"
-
+              
+      - name: "Multi-SETUP demos"
+        project: "Ansible Content Demos"
+        playbook: "multi_select_setup.yml"
+        inventory: "CaC Inventory"
+        credentials: "AAP OAuth for CaC"
+        survey_enabled: true
+        survey:
+          name: ''
+          description: ''
+          spec:
+            - question_name: "Which demos do you want to configure?"
+              type: multiselect
+              variable: demos
+              required: true
+              default: "cloud\nlinux\nnetwork\nopenshift\nwindows"
+              choices:
+                - cloud
+                - linux
+                - network
+                - openshift
+                - satellite
+                - windows
+        extra_vars:
+          operation_translate:
+            present:
+              verb: "Create/Update"
+              action: "creation"
+            absent:
+              verb: "Remove"
+              action: "deletion"
+            exists:
+              verb: "Already Exists"
+              action: "exists"
+              
     user_message: "Configuration Complete"
 
   tasks:
