@@ -3,13 +3,17 @@
   hosts: localhost
   vars:
     controller_validate_certs: false
+    product_demos_url: https://github.com/ffirg/ansible-tower-samples
     controller_execution_environments:
       - name: product-demos
         image: quay.io/acme_corp/product-demos-ee:latest
-    controller_organizations:
-      - name: PhilsFooFoo
-        description: Phils CaC testing
-        max_hosts: 1
+    controller_projects:
+      - name: Ansible official demo project
+        organization: Default
+        scm_type: git
+        scm_url: "{{ product_demos_url | default('https://github.com/ansible/product-demos') }}"
+        scm_branch: "{{ product_demos_branch | default('main') }}"
+        wait: true
     user_message: "Configuration Complete"
 
   tasks:
