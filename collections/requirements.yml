@@ -9,7 +9,7 @@ collections:
   - name: ansible.eda
     version: 2.1.0
   - name: infra.controller_configuration
-    version: 2.9.0
+    version: 2.10.3
   - name: infra.ah_configuration
     version: 2.0.6
   - name: infra.eda_configuration
