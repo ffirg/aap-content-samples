@@ -10,9 +10,10 @@
       - name: PhilFooOrg
         default_environment:
           name: 'product-demos'
- #       galaxy_credentials:
-  #        - Ansible Galaxy
-  #        - Automation Hub
+        galaxy_credentials:
+          - c.r.c Staging Content
+          - c.r.c Staging Validated
+          - c.r.c Staging Published
     controller_inventories:
       - name: Ansible Product Demos Inventory
         organization: Default
