@@ -4,10 +4,10 @@
   vars:
     controller_validate_certs: false
     controller_execution_environments:
-      - name: product-demos
+      - name: Ansible Product Demos EE
         image: quay.io/acme_corp/product-demos-ee:latest
     controller_organizations:
-      - name: Default
+      - name: PhilFooOrg
         default_environment:
           name: 'product-demos'
  #       galaxy_credentials:
