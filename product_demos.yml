@@ -3,6 +3,7 @@
   hosts: localhost
   vars:
     controller_validate_certs: false
+    controller_dependency_check: false
     controller_execution_environments:
       - name: Ansible Product Demos EE
         image: quay.io/acme_corp/product-demos-ee:latest
