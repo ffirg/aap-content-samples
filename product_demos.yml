@@ -7,14 +7,14 @@
     controller_execution_environments:
       - name: Ansible Product Demos EE
         image: quay.io/acme_corp/product-demos-ee:latest
-    controller_organizations:
-      - name: PhilFooOrg
-        default_environment:
-          name: 'product-demos'
-        galaxy_credentials:
-          - c.r.c Staging Content
-          - c.r.c Staging Validated
-          - c.r.c Staging Published
+#    controller_organizations:
+#      - name: PhilFooOrg
+#        default_environment:
+#          name: 'product-demos'
+#        galaxy_credentials:
+#          - c.r.c Staging Content
+#          - c.r.c Staging Validated
+#          - c.r.c Staging Published
     controller_inventories:
       - name: Ansible Product Demos Inventory
         organization: Default
